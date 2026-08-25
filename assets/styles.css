@@ -20,7 +20,7 @@ a{text-decoration:none;color:inherit}
 /* Header */
 .header{position:sticky;top:0;z-index:9000;background:#fff;border-bottom:1px solid var(--line)}
 .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{height:44px;max-width:285px;object-fit:contain}
+.logo{height:31px;max-width:200px;object-fit:contain}
 .links{display:flex;gap:16px;align-items:center;color:var(--navy);font-size:13px;font-weight:850}
 .links a{white-space:nowrap}
 .links a:hover{color:var(--navy2)}
