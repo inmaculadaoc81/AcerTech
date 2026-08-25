@@ -186,3 +186,9 @@ footer{background:#17334f;color:#fff;padding:34px 0}
   #n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{right:16px!important;bottom:96px!important}
   #n8n-chat .chat-window:not([class*="toggle"]),#n8n-chat [class*="chat-window"]:not([class*="toggle"]){left:12px!important;right:12px!important;width:auto!important;bottom:166px!important}
 }
+
+/* SEO content section */
+.seo-content{background:#fff}
+.seo-text{max-width:900px;margin-top:18px;display:grid;gap:16px}
+.seo-text p{color:var(--muted);font-size:16px;line-height:1.7;margin:0}
+.seo-text small{color:#8a97a8}
