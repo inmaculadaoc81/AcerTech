@@ -22,4 +22,35 @@ CONTACT_EMAIL=soporte@kelatos.com
 
 El correo no aparece visible en la web; solo se utiliza en /api/contacto.
 
-No se proporcionó Google Analytics para esta web.
+Google Analytics:
+G-V5SXVC3M37
+
+HISTORIAL: el repositorio era multipágina (7 páginas /modelos/ de
+gamas Acer y varias páginas /servicios/) y se convirtió a one-page;
+esas páginas fueron eliminadas en commits anteriores. Como ya no
+existen en el sitemap actual, se ha añadido middleware.mjs para
+redirigir (301) cualquier URL antigua a la home, evitando 404 en
+enlaces indexados o backlinks antiguos. Excluye /api/* y cualquier
+ruta con extensión de archivo. Se añadió "@vercel/functions": "^2.0.3"
+a package.json como dependencia de esta función.
+
+Dominio revisado contra el resto de dominios de la familia en esta
+sesión (incluido AcerGlobal, globalacer.com.es): sin colisión.
+
+REVISIÓN (fixes aplicados en esta pasada):
+- Ya estaba bien: banner de cookies, schema.org LocalBusiness (ya
+  usaba correctamente el teléfono de la caja de información,
+  +34 910 05 40 41, no el de los botones), sección SEO "Sobre Acer",
+  api/contacto.js con SMTP + nodemailer. No se ha modificado ninguno
+  de estos, ni ninguno de los dos números de teléfono.
+- Google Analytics: no existía. Añadido G-V5SXVC3M37.
+- Meta robots: no existía. Añadido.
+- .navcall: el texto largo ("Atención Telefónica 24 horas 365 días")
+  deformaba la píldora del menú. Acortado a solo el número (mismo
+  número de los botones, +34 914 46 85 03) y añadido
+  white-space:nowrap como salvaguarda.
+- H1 de portada reescrito, corto, directo y totalmente afirmativo
+  (sin interrogación ni condicionales), incluye la marca: "Tu Acer no
+  funciona. Te damos una solución clara." Tamaño del H1 aumentado:
+  clamp(38-58px) → clamp(46-74px) en escritorio, 40px → 48px en
+  móvil.
