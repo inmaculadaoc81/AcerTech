@@ -54,3 +54,24 @@ REVISIÓN (fixes aplicados en esta pasada):
   funciona. Te damos una solución clara." Tamaño del H1 aumentado:
   clamp(38-58px) → clamp(46-74px) en escritorio, 40px → 48px en
   móvil.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" usada en varios repos.
+  Reescrito con estructura de una sola frase, imperativa: "Repara tu
+  Acer con diagnóstico claro y rápido." (8 palabras).
+- BUG REAL — dos textos decorativos gigantes sin reducción de tamaño
+  en móvil/tablet: ".problems::after" ("ACER", 180px) y
+  ".hardware-art::before" ("HARDWARE", 82px). Añadida reducción en
+  tablet (110px/60px) y móvil (64px/42px).
+- Enlace de política de privacidad: la casilla existía pero sin
+  enlace. Añadido a https://kelatos.com/privacy-policy/, en azul y
+  subrayado.
+- El aviso de servicio independiente solo estaba en letra pequeña del
+  footer. Añadida la franja destacada bajo el menú.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Botón "Atención Telefónica..." sin icono, a diferencia del de
+  WhatsApp. Añadido.
+- Verificado: schema.org ya usaba correctamente el teléfono de la
+  caja de información; formulario correctamente conectado a
+  /api/contacto. Sin cambios en ninguno de estos.
