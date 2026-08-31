@@ -75,3 +75,10 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente)
 - Verificado: schema.org ya usaba correctamente el teléfono de la
   caja de información; formulario correctamente conectado a
   /api/contacto. Sin cambios en ninguno de estos.
+
+REVISIÓN ADICIONAL (a petición del cliente, tras ver captura en vivo):
+- Quitada la pestaña/etiqueta rotada (.hero-chip, "Portátiles · PCs ·
+  All-in-One Acer") que sobresalía y se solapaba con la caja de
+  información en anchos de tablet/escritorio medio. Se deja como
+  regla para toda la familia: no volver a añadir este tipo de
+  elemento decorativo.
