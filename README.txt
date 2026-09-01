@@ -1,5 +1,35 @@
 AcerTech ONE PAGE
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — este repo es el primero de la lista de 48, aplicar mismos puntos a los siguientes):
+- BUG REAL — enlace de Cal.com desactualizado. Actualizado el iframe a
+  https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true
+  (se han mantenido embed=true y theme=light, necesarios para que se
+  vea como widget embebido dentro del iframe, y se han añadido los dos
+  parámetros nuevos indicados por el cliente).
+- Verificado: el correo soporte@kelatos.com no aparece visible en
+  ningún sitio de esta web. No hacía falta ningún cambio.
+- BUG REAL — el mensaje prellenado de WhatsApp decía "¡Hola Kelatos!"
+  en vez del nombre de la marca de este repo, tanto en el botón CTA
+  del hero como en el botón flotante. Corregido a "¡Hola AcerTech!"
+  en los dos sitios.
+- Verificado: el menú móvil (#mainMenu) ya cierra correctamente al
+  seleccionar cualquier enlace (mainMenu.classList.remove('open') en
+  el listener de cada <a>); no tenía el bug descrito por el cliente
+  de quedarse abierto. Revisar caso por caso en el resto de repos.
+- Verificado: no se ha encontrado ningún icono ni imagen con
+  width/height fijos que provoquen deformación en el hero. El logo ya
+  usa object-fit:contain. Revisar caso por caso en el resto de repos.
+- Verificado: el H1 en móvil (≤600px) ya está fijado en 48px, igual
+  al estándar pedido por el cliente. No hacía falta ningún cambio.
+- BUG REAL — los botones del hero (.cta) no tenían ningún estado
+  :hover y su border-radius (16px) no se percibía como muy
+  redondeado. Aumentado a border-radius:999px (píldora completa) y
+  añadido estado hover: .wa/.pickup oscurecen con
+  filter:brightness(.88); .phone (que es un botón outline, fondo
+  blanco con borde navy) pasa a fondo navy sólido y texto blanco al
+  pasar el ratón, para que se note claramente que es un botón
+  interactivo.
+
 Dominio:
 https://reparaciondeportatilesmadrid.com.es/
 
