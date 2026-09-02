@@ -120,9 +120,15 @@ REVISIÓN ADICIONAL (a petición del cliente — nueva regla de familia sobre me
   posiciona en absoluto a top:78px dentro de ese mismo header (78px =
   altura de la fila de navegación), así que al abrir el menú en móvil
   el desplegable aparecía justo encima/solapado con la franja de
-  aviso, resultando incómodo. Movida la franja de independencia
-  dentro de <section class="hero">, como una píldora (border-radius,
-  fondo amarillo) por encima del H1, ya no forma parte de la cabecera.
+  aviso, resultando incómodo. Movida la franja de independencia fuera
+  de <header>, como hermana justo después de él y antes de <main>:
+  sigue siendo una franja amarilla de ancho completo (mismo estilo de
+  siempre, sin cambios de CSS), solo que ahora vive entre la cabecera
+  y el hero en vez de dentro de la cabecera. (Primer intento: se
+  probó como píldora dentro del hero por encima del H1 — descartado
+  a petición del cliente, que confirmó con una captura que el diseño
+  correcto es la franja de ancho completo tal como estaba, solo que
+  reubicada fuera del header.)
 - Verificado: el header (.header{position:sticky;top:0}) ya se
   mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
   El menú desplegable móvil ahora aparece limpio, sin solaparse con
