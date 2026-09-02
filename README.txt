@@ -112,3 +112,18 @@ REVISIÓN ADICIONAL (a petición del cliente, tras ver captura en vivo):
   información en anchos de tablet/escritorio medio. Se deja como
   regla para toda la familia: no volver a añadir este tipo de
   elemento decorativo.
+
+REVISIÓN ADICIONAL (a petición del cliente — nueva regla de familia sobre menú móvil, repo 1/48):
+- BUG REAL — la franja de aviso de independencia
+  (.disclaimer-bar) estaba dentro de <header>, justo debajo de la
+  fila de navegación. El menú móvil desplegable (.links.open) se
+  posiciona en absoluto a top:78px dentro de ese mismo header (78px =
+  altura de la fila de navegación), así que al abrir el menú en móvil
+  el desplegable aparecía justo encima/solapado con la franja de
+  aviso, resultando incómodo. Movida la franja de independencia
+  dentro de <section class="hero">, como una píldora (border-radius,
+  fondo amarillo) por encima del H1, ya no forma parte de la cabecera.
+- Verificado: el header (.header{position:sticky;top:0}) ya se
+  mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
+  El menú desplegable móvil ahora aparece limpio, sin solaparse con
+  nada, porque la cabecera solo contiene la fila de navegación.
