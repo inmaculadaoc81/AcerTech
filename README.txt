@@ -133,3 +133,18 @@ REVISIÓN ADICIONAL (a petición del cliente — nueva regla de familia sobre me
   mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
   El menú desplegable móvil ahora aparece limpio, sin solaparse con
   nada, porque la cabecera solo contiene la fila de navegación.
+
+BLOG (/blog):
+- Los artículos NO viven en este repositorio: los genera y aprueba el agente
+  SEO de Kelatos (Agentes V2 → organización «AcerTech», clave acertech) y se
+  leen en vivo de la API pública de Kelatos, sin token:
+  https://db.affirmatechnology.com/kelatos-api/publico/blog?org=acertech
+- api/blog.js + lib/blog.js generan /blog y /blog/<slug> en el servidor
+  (HTML completo para Google); copian de index.html la cabecera, el aviso de
+  independencia, el pie, el botón de WhatsApp, las cookies y Analytics.
+- api/sitemap.js genera /sitemap.xml con la home, /blog y cada artículo
+  publicado (se eliminó el sitemap.xml estático).
+- vercel.json: rewrites de /blog, /blog/<slug> y /sitemap.xml; la redirección
+  de URLs antiguas a la home ya no afecta a /blog.
+- Estilos del blog en assets/blog.css. Enlace «Blog» añadido al menú (sirve
+  también para el menú móvil) y al pie.
